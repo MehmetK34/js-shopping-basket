@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-PJsj/BTMqILvmcej7ulplguok8ag4xFTPryRq8xevL7eBYSmpXKcbNVuy+P0RMgq"
+      crossorigin="anonymous"
+    />
+    <!-- FONTAWESOME CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>SHOPPING-BASKET</title>
+  </head>
+  <body>
+    <!--* HEADER START -->
+    <header class="container">
+      <nav class="navbar navbar-expand navbar-dark bg-primary">
+        <div class="container">
+          <a href="#" class="navbar-brand">Logo</a>
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="#" class="nav-link active">Home</a>
+              </li>
+            </ul>
+          </div>
+          <div class="shopping-cart position-relative">
+            <button
+              type="button"
+              class="btn-cart btn btn-primary position-relative"
+            >
+              <i class="fas fa-shopping-cart"></i>
+              <span
+                id="item-count"
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger mt-2"
+                >0</span
+              >
+            </button>
+
+            <!-- 55. satirda d-none yazdim. Cunku js de yapacagim burada simdi gostermek istemedim. -->
+            <div class="shopping-cart-list bg-primary d-none">
+              <b class="fs-5 text-white">Shopping Cart</b>
+<!-- 59. satirdaki kodu scriptte yazdigim icin commente aldim. -->
+              <!-- <div class="list-item"> -->
+                <div class="row align-items-center text-white-50">
+                  <div class="col-md-3">
+                    <img
+                      src="./image/paddle-finne.jpg"
+                      alt="product"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col-md-5">
+                    <div class="title">Headphones</div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="price">$ 14</div>
+                  </div>
+                  <div class="col-md-2">
+                    <button class="btn btn-delete">
+                      <i class="fas fa-trash-alt text-danger"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--* HEADER FINISH -->
+
+    <!--* SECTION START -->
+    <section class="products mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-3 ">
+            <div class="card">
+              <img
+                src="./image/sup.jpeg"
+                alt="product"
+                class="card-img-top img-fluid"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Paddle Boards</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+                  exercitationem eum vitae omnis tenetur illo veniam laboriosam
+                  amet fuga voluptas totam fugit doloribus repellendus
+                  laudantium aliquid iste velit aperiam odit dolorum, unde,
+                  molestiae enim eius animi. Id, molestiae!
+                </p>
+                <div class="d-flex justify-content-between">
+                  <a class="btn btn-info text-white" href="#"
+                    ><i class="fas fa-shopping-cart"></i> Add to Cart</a
+                  >
+                  <span
+                    class="price badge rounded-pill bg-warning text-dark d-flex align-items-center"
+                    >$ 240</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3 ">
+            <div class="card">
+              <img
+                src="./image/kurek.jpg"
+                alt="product"
+                class="card-img-top img-fluid"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Paddle</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Mollitia corrupti tempore quisquam? Odit illum nesciunt
+                  placeat deleniti, odio labore minima ullam ab aliquam quas
+                  eius nobis libero, fuga inventore dolorum explicabo eveniet
+                  asperiores unde adipisci ut soluta exercitationem nihil.
+                  Veniam!
+                </p>
+                <div class="d-flex justify-content-between">
+                  <a class="btn btn-info text-white" href="#"
+                    ><i class="fas fa-shopping-cart"></i> Add to Cart</a
+                  >
+                  <span
+                    class="price badge rounded-pill bg-warning text-dark d-flex align-items-center"
+                    >$ 57</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3 ">
+            <div class="card">
+              <img
+                src="./image/paddle-finne.jpg"
+                alt="product"
+                class="card-img-top img-fluid"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Paddle Finne</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt laborum minus, maxime ullam dolore reprehenderit,
+                  animi dolorum molestiae iusto consectetur cum quam
+                  consequuntur similique, ut fugit itaque in vero magnam
+                  temporibus error eveniet ipsa vel perspiciatis earum. Totam,
+                  repudiandae facere.
+                </p>
+                <div class="d-flex justify-content-between">
+                  <a class="btn btn-info text-white" href="#"
+                    ><i class="fas fa-shopping-cart"></i> Add to Cart</a
+                  >
+                  <span
+                    class="price badge rounded-pill bg-warning text-dark d-flex align-items-center"
+                    >$ 45</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-3 ">
+            <div class="card">
+              <img
+                src="./image/pumpe.jpg"
+                alt="product"
+                class="card-img-top img-fluid"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Paddle Pumpe</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eligendi labore eaque neque magni. Qui minus iste aperiam, in
+                  at alias amet blanditiis ipsam consequuntur praesentium
+                  provident commodi ducimus perspiciatis labore. Ipsam velit
+                  perspiciatis fugiat non architecto, consequatur amet iste
+                  nihil?
+                </p>
+                <div class="d-flex justify-content-between">
+                  <a class="btn btn-info text-white" href="#"
+                    ><i class="fas fa-shopping-cart"></i> Add to Cart</a
+                  >
+                  <span
+                    class="price badge rounded-pill bg-warning text-dark d-flex align-items-center"
+                    >$ 25</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
